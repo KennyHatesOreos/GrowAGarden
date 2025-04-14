@@ -1,0 +1,26 @@
+Auto sell 
+game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("Sell_Inventory"):FireServer()
+
+buy strawberry
+local args = {
+    [1] = "Strawberry"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
+
+
+buy carrot
+local args = {
+    [1] = "Carrot"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("BuySeedStock"):FireServer(unpack(args))
+
+
+Auto Plant
+local args = {
+    [1] = Vector3.new(16.42891502380371, 0.1355254054069519, 55.071693420410156),
+    [2] = "Strawberry"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GameEvents"):WaitForChild("Plant_RE"):FireServer(unpack(args))
